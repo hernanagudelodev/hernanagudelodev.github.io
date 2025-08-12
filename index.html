@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hernán Agudelo – Backend & Systems Engineer</title>
+  <meta name="description" content="Backend & Systems Engineer (Python/Django, FastAPI). Portfolio with SaaS projects, REST APIs, and automation work." />
+  <meta property="og:title" content="Hernán Agudelo – Backend & Systems Engineer" />
+  <meta property="og:description" content="Portfolio with SaaS projects, REST APIs, and automation work." />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b1020; /* deep navy */
+      --panel: #0f172a; /* slate-900 */
+      --soft: #111a33;
+      --text: #e5e7eb; /* zinc-200 */
+      --muted: #9ca3af; /* gray-400 */
+      --brand: #22d3ee; /* cyan-400 */
+      --brand-600: #0891b2; /* cyan-700 */
+      --accent: #a78bfa; /* violet-400 */
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+    a { color: inherit; text-decoration: none; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+    header { display: grid; grid-template-columns: 120px 1fr; gap: 24px; align-items: center; padding: 28px 0 12px; }
+    .avatar { width: 120px; height: 120px; border-radius: 9999px; object-fit: cover; border: 2px solid #1f2937; background: #0b0f1a; }
+    .headline h1 { margin: 0 0 6px; font-size: 28px; font-weight: 700; }
+    .headline p { margin: 0; color: var(--muted); line-height: 1.5; }
+    .cta { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 10px; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; border-radius: 14px; font-weight: 600; transition: transform .08s ease, background .2s ease; border: 1px solid #1f2937; background: linear-gradient(180deg, rgba(34,211,238,.12), rgba(34,211,238,.06)); }
+    .btn:hover { transform: translateY(-1px); background: linear-gradient(180deg, rgba(34,211,238,.18), rgba(34,211,238,.10)); }
+    .btn.secondary { background: linear-gradient(180deg, rgba(167,139,250,.12), rgba(167,139,250,.06)); }
+    .grid { display: grid; gap: 16px; }
+    .section { margin: 28px 0; }
+    .section h2 { margin: 0 0 12px; font-size: 22px; font-weight: 700; letter-spacing: .2px; }
+    .card { background: linear-gradient(180deg, var(--panel), var(--soft)); border: 1px solid #1f2937; border-radius: 16px; padding: 18px; }
+    .projects { grid-template-columns: repeat(3, 1fr); }
+    .project h3 { margin: 0 0 6px; font-size: 18px; }
+    .project p { margin: 0; color: var(--muted); }
+    .badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    .badge { padding: 6px 10px; background: #0b1328; border: 1px solid #1f2937; border-radius: 999px; color: #cbd5e1; font-size: 12px; }
+    .about p { margin: 8px 0; color: #cbd5e1; }
+    footer { margin: 40px 0 20px; color: var(--muted); text-align: center; font-size: 14px; }
+    /* responsive */
+    @media (max-width: 900px) {
+      header { grid-template-columns: 80px 1fr; }
+      .avatar { width: 80px; height: 80px; }
+      .projects { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <!-- Replace src with your hosted square photo (400x400). -->
+      <img class="avatar" src="https://avatars.githubusercontent.com/u/000000?v=4" alt="Hernán Agudelo portrait" />
+      <div class="headline">
+        <h1>Hernán Agudelo</h1>
+        <p><strong>Backend & Systems Engineer</strong> — Python/Django, FastAPI, REST APIs, PostgreSQL. Bridging software & hardware to ship reliable systems. Open to relocate – San Diego, CA · C2 English.</p>
+        <div class="cta">
+          <a class="btn" href="https://www.linkedin.com/in/hernan-agudelo" target="_blank" rel="noopener">🔗 LinkedIn</a>
+          <a class="btn secondary" href="https://github.com/hernanagudelodev" target="_blank" rel="noopener">💻 GitHub</a>
+          <a class="btn" href="#" target="_blank" rel="noopener">📄 Download CV</a>
+          <a class="btn" href="mailto:hernanagudelodev@gmail.com">✉️ Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="section about card">
+      <h2>About</h2>
+      <p>Multidisciplinary engineer with 16+ years spanning backend development, industrial automation, and systems integration. I build reliable, scalable software that connects devices, data, and people.</p>
+      <p><strong>Tech:</strong> Python · Django · FastAPI · PostgreSQL · REST APIs · Docker · Git</p>
+      <p><strong>Languages:</strong> English (C2) · Spanish (native)</p>
+    </section>
+
+    <section class="section">
+      <h2>Featured Projects</h2>
+      <div class="grid projects">
+        <a class="card project" href="https://github.com/hernanagudelodev/SaaSInmobiliario" target="_blank" rel="noopener">
+          <h3>SaaS Inmobiliario</h3>
+          <p>Multi-tenant real estate SaaS with inventory, contracts, and payment reconciliation. Modular & scalable.</p>
+          <div class="badges">
+            <span class="badge">Django</span>
+            <span class="badge">PostgreSQL</span>
+            <span class="badge">Docker</span>
+          </div>
+        </a>
+        <a class="card project" href="https://github.com/hernanagudelodev/appInventarios" target="_blank" rel="noopener">
+          <h3>AppInventarios</h3>
+          <p>Dynamic property inventory system with configurable forms, e‑signatures, and PDF generation.</p>
+          <div class="badges">
+            <span class="badge">Django</span>
+            <span class="badge">Leaflet</span>
+            <span class="badge">Bootstrap</span>
+          </div>
+        </a>
+        <a class="card project" href="https://github.com/hernanagudelodev/budget-app-backend" target="_blank" rel="noopener">
+          <h3>Budget App</h3>
+          <p>FastAPI backend for budget tracking with AI forecasting & natural‑language transaction input (planned).</p>
+          <div class="badges">
+            <span class="badge">FastAPI</span>
+            <span class="badge">PostgreSQL</span>
+            <span class="badge">JWT Auth</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section card">
+      <h2>Contact</h2>
+      <p>Email me at <a href="mailto:hernanagudelodev@gmail.com">hernanagudelodev@gmail.com</a> or connect on <a href="https://www.linkedin.com/in/hernan-agudelo" target="_blank" rel="noopener">LinkedIn</a>. I’m open to backend roles and system integration challenges in San Diego or remote.</p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Hernán Agudelo · Built with plain HTML/CSS · Deployed on GitHub Pages/Netlify
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
